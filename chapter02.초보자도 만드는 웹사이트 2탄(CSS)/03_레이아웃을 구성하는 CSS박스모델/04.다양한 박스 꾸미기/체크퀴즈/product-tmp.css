@@ -1,0 +1,42 @@
+#container {
+   width: 600px;
+   margin: 0 auto;
+   /* 가운데정렬 시 width를 반드시 줘야 한다 */
+   /* border: 1px solid black; */
+}
+
+table {
+   border: 1px solid rgb(151, 151, 151);
+   border-collapse: collapse;
+   width: 450px;
+}
+
+td,
+th {
+   border: 1px solid rgb(151, 151, 151);
+   padding: 10px;
+   text-align: center;
+}
+
+#description {
+   border: 1px solid black;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   padding: 20px;
+   border-style: dotted;
+}
+
+#receipe {
+   border: 1px solid black;
+   padding: 20px;
+   border-style: dotted;
+   margin: 30px 0px;
+}
+
+#package {
+   border: 1px solid black;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+   padding: 20px;
+   border-style: dotted;
+}

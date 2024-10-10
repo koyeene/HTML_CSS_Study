@@ -1,0 +1,123 @@
+/* 초기화 속성 */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   /* 부모태그의 속성을 그해로 상속받아 사용 */
+   color: inherit;
+}
+
+/* 공통 - 버튼 */
+.bt_wrap {
+   margin-top: 30px;
+   text-align: center;
+}
+
+.bt_wrap a {
+   /* widght, height, margin적용을 위해 */
+   display: inline-block;
+
+   /* 최소너비 : 80px 아래로 작아지지 않도록 하기 위해 */
+   min-width: 80px;
+   margin-left: 10px;
+   padding: 10px;
+   border: 1px solid black;
+   font-size: 1.4rem;
+   border-radius: 2px;
+   text-align: center;
+}
+
+.bt_wrap a:hover {
+   text-decoration: underline;
+}
+
+/* 글쓰기버튼을 오른쪽 정렬 */
+.bt_list {
+   text-align: right;
+}
+/* index.html */
+.wrap {
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.board_list {
+   width: 100%;
+   border-top: 1px solid #444;
+   border-collapse: collapse;
+   font-size: 1.5rem;
+}
+
+.board_list caption {
+   padding: 30px;
+}
+
+.board_list th,
+.board_list td {
+   border-bottom: 1px solid #444;
+   padding: 10px;
+   text-align: center;
+}
+
+.board_list td.title > a:hover {
+   text-decoration: underline;
+}
+
+.board_page {
+   margin-top: 30px;
+   text-align: center;
+
+   /* 하위 요소들, div박스를 가로로 정렬해준다 */
+   display: flex;
+
+   /* 가운데 정렬 */
+   justify-content: center;
+}
+
+.board_page a {
+   /* a태그 내부의 텍스트를 가운데 정렬하기 위해 사용 > 보드페이지 안에 적용해도 a태그는 보드 태그의 자식 요소이기 때문에 영향을 받는다 */
+   text-align: center;
+   display: inline-block;
+
+   width: 32px;
+   height: 32px;
+
+   /* border + padding + content 다 더해서 32px를 쓰겠다*/
+   box-sizing: border-box;
+
+   /* 수직상 가운데정렬 */
+   line-height: 32px;
+}
+
+.board_page a:hover {
+   text-decoration: underline;
+}
+
+.board_page a.bt {
+   font-size: 1.2rem;
+
+   /* 글자간격(꺽새) */
+   letter-spacing: -1px;
+}
+
+.board_page a.num {
+   font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+   border-color: #000;
+   background-color: #000;
+   color: #fff;
+}

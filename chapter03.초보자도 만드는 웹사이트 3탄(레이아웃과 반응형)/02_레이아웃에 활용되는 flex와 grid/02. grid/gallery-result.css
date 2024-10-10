@@ -1,0 +1,39 @@
+* {
+   /* 콘텐츠 영역 + 패딩 + 보더 합쳐서 width, height사용*/
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #eee;
+   font-size: 16px;
+}
+
+.weapper {
+   display: grid;
+   /* 화면을 꽐 채울만큼 칼럼 너비를 늘려서 표시 */
+   /* 컬럼 너비 320px ~ 1fr(화면 사이즈가 늘어나도 1:1:1 비율 유지) */
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+   /* 컬럼, 행 모두 gap 1rem */
+   grid-gap: 1rem; /*rem : html기준 폰트사이즈 _> 16px*/
+}
+
+.card {
+   background-color: #fff;
+   box-shadow: 0px 1px 5px #222;
+}
+
+.card > header {
+   font-size: 1.5rem;
+   padding: 0.5rem;
+}
+
+.card > p {
+   padding: 0.5rem;
+   line-height: 1.6;
+}
+
+.card > img {
+   /* 반응형 이미지 */
+   max-width: 100px;
+}

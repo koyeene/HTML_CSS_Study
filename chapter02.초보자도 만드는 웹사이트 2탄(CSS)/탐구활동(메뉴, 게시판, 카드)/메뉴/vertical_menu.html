@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         *,
+         /* 기본 마진, 패딩 초기화 ul불릿패딩도 포함으로 없앰 */
+         body {
+            margin: 0;
+            padding: 0;
+         }
+
+         ul {
+            list-style-type: none;
+            background-color: #f1f1f1;
+            width: 200px; /*메뉴의 전체 width를 지정*/
+         }
+
+         a {
+            display: block;
+            text-decoration: none; /*링트 밑줄 사라짐*/
+            color: black;
+            padding: 8px 16px; /*a태그는 인라인 태그여서 디스플레이 블록, 인라인블록 으로 주는 게 좋다(그래야 패딩이 적용됨...)*/
+         }
+
+         /* 메뉴에 호버했을때 a요소에 css속성을 ~게 바꾸겠다*/
+         a:hover {
+            background-color: black;
+            color: #fff;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a href="#">홈</a></li>
+         <li><a href="#">뉴스</a></li>
+         <li><a href="#">블로그</a></li>
+         <li><a href="#">쇼핑</a></li>
+      </ul>
+   </body>
+</html>
