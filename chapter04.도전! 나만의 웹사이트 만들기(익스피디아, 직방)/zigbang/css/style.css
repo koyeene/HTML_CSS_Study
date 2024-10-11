@@ -262,6 +262,16 @@ h1 {
    margin-bottom: 10px;
 }
 
+.b02 {
+   width: 60px;
+   height: 30px;
+   font-size: 12px;
+   float: right;
+   color: #838383;
+   text-align: center;
+   line-height: 30px;
+}
+
 /* 섹션3 */
 
 .s03__div1 {
@@ -322,27 +332,31 @@ button:hover {
 
 .footer_content {
    width: 100%;
-   height: 200px;
+   height: 150px;
    margin-top: 60px;
    /* border: 1px solid blue; */
    text-align: center;
    font-size: 12px;
 }
 
-footer > div {
+footer > .footer_content > .footer_content02 {
    /* border: 1px solid blue; */
-   text-align: center;
    margin: 0 auto;
-   width: 300px;
-   height: 50px;
+   text-align: center;
+   width: 1200px;
 }
 
 footer > div {
    /* border: 1px solid blue; */
    text-align: center;
    margin: 0 auto;
-   width: 300px;
+}
+
+.sns_content {
+   margin: 0 auto;
+   width: 220px;
    height: 50px;
+   color: #707070;
 }
 
 .sns_content > div {
@@ -353,5 +367,5 @@ footer > div {
    border: 1px solid #d3d2d2;
    line-height: 34px;
    margin: 0 auto;
-   margin-left: 20px;
+   margin-left: 16px;
 }
